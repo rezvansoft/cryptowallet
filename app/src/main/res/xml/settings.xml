@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <Preference
+            android:defaultValue="0"
+            android:key="default_currency"
+            android:title="واحد"
+            ></Preference>
+
+        <Preference android:title="امتیاز" android:key="settings_rate_us" android:summary="امتیاز دادن به اپلیکیشن"></Preference>
+        <Preference android:title="ارسال اپلیکیشن" android:key="settings_share_app" android:summary="ارسال برنامه برای دیگران"></Preference>
+        <Preference android:title="ارسال بازخورد" android:key="settings_contact_us" android:summary="rezvansoft6137@gmail.com"></Preference>
+        <Preference android:title="حمایت از ما" android:key="settings_donate" android:summary="حمایت با استفاده از ارزهای دیجیتال"></Preference>
+        <Preference android:title="مجوزها" android:key="settings_credits" ></Preference>
+
+
+
+
+
+
+
+
+</PreferenceScreen>
