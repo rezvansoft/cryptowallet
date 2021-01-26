@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_container"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+       >
+
+        <android.support.v7.widget.Toolbar
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            app:subtitleTextAppearance="@style/Toolbar.SubTitleText"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:id="@+id/toolbar"
+            android:layoutDirection="rtl"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="?attr/colorPrimary" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+<LinearLayout android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/wallet_details_coin_worth_layout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_weight=".1"
+        android:background="?attr/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/iransans"
+            android:layout_marginTop="20dp"
+            android:text="ارزش دارایی"
+            android:textColor="#ffffff" />
+        <TextView
+            android:id="@+id/wallet_details_coin_worth_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/iransans"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/wallet_details_coin_worth_text_size" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/wallet_details_layout_padding_bottom">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="3dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="3dp">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.price_text"
+                    android:fontFamily="@font/iransans"
+                    android:id="@+id/wallet_details_balance_text"
+                    android:layout_marginBottom="@dimen/wallet_details_text_margin_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity="bottom|center"
+                    android:textSize="@dimen/wallet_details_text_size" />
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.wallet_details_label"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/iransans"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="موجودی" />
+
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:visibility="gone"
+                android:background="@color/colorAccent"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"></View>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="3dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.price_text"
+                    android:id="@+id/wallet_details_unconf_balance_text"
+                    android:fontFamily="@font/iransans"
+                    android:gravity="bottom|center"
+                    android:layout_marginBottom="@dimen/wallet_details_text_margin_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textSize="@dimen/wallet_details_text_size"
+                    android:layout_weight="3" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    style="@style/TextAppearance.AppCompat.wallet_details_label_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iransans"
+                    android:gravity="center"
+                    android:text="تایید نشده" />
+
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <View
+            android:visibility="gone"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+
+
+
+            <View
+                android:visibility="gone"
+                android:background="@color/colorAccent"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"></View>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="3dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="3dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.price_text"
+                    android:fontFamily="@font/iransans"
+                    android:id="@+id/wallet_details_total_received_text"
+                    android:layout_marginBottom="@dimen/wallet_details_text_margin_bottom"
+                    android:gravity="bottom|center"
+                    android:textSize="@dimen/wallet_details_text_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    style="@style/TextAppearance.AppCompat.wallet_details_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/iransans"
+                    android:text="مجموع دریافتی" />
+
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="3dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.price_text"
+                    android:layout_marginBottom="@dimen/wallet_details_text_margin_bottom"
+                    android:id="@+id/wallet_details_total_sent_text"
+                    android:fontFamily="@font/iransans"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity="bottom|center"
+                    android:textSize="@dimen/wallet_details_text_size"
+                    />
+
+                <TextView
+                    android:layout_gravity="center"
+                    style="@style/TextAppearance.AppCompat.wallet_details_label_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/iransans"
+                    android:text="مجموع ارسالی" />
+
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <View
+            android:visibility="gone"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="3dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.price_text"
+                    android:id="@+id/wallet_details_transactions_text"
+                    android:layout_marginBottom="@dimen/wallet_details_text_margin_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/iransans"
+                    android:gravity="bottom|center"
+                    android:textSize="@dimen/wallet_details_text_size"
+                    />
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.wallet_details_label"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/iransans"
+                    android:text="تراکنش ها" />
+
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <View
+                android:visibility="gone"
+                android:background="@color/colorAccent"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"></View>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="3dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.price_text"
+
+                    android:id="@+id/wallet_details_unconf_transactions_text"
+                    android:gravity="bottom|center"
+                    android:textSize="@dimen/wallet_details_text_size"
+                    android:layout_marginBottom="@dimen/wallet_details_text_margin_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:fontFamily="@font/iransans"
+                    android:layout_weight="3" />
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.wallet_details_label_red"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/iransans"
+                    android:text="تایید نشده" />
+
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>

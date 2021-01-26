@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_container"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codit.cryptowatchwallet.ir.codit.cryptowatchwallet.activity.AddWalletActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            app:navigationIcon="@drawable/ic_back"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            app:title="اضافه کردن کیف پول"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:layoutDirection="rtl"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="@dimen/add_wallet_activity_parent_padding_left_right"
+    android:paddingRight="@dimen/add_wallet_activity_parent_padding_left_right"
+    android:paddingTop="@dimen/add_wallet_activity_parent_padding_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_marginTop="@dimen/add_wallet_activity_name_edittext_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/add_wallet_name_edittext"
+            android:hint="نام کیف پول"
+            android:textDirection="rtl"
+            android:fontFamily="@font/iransans"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_height" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_marginTop="@dimen/add_wallet_activity_address_edittext_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:inputType="textNoSuggestions"
+            android:focusableInTouchMode="false"
+            android:id="@+id/add_wallet_coin_edittext"
+            android:hint="ارز"
+            android:fontFamily="@font/iransans"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_height" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="@dimen/add_wallet_activity_address_edittext_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:id="@+id/add_wallet_address_edittext"
+            android:hint="آدرس کیف پول"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/iransans"
+            android:minHeight="@dimen/edit_text_height"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/add_wallet_address_button_layout_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatButton
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/roboto_bold"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:id="@+id/button_copy_clip"
+            android:textColor="@color/colorPrimary"
+            android:text="چسباندن از کلیپ بورد"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:layout_alignParentLeft="true" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/roboto_bold"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:id="@+id/button_scan_qr"
+            android:textColor="@color/colorPrimary"
+            android:text="اسکن QR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+
+</LinearLayout>
