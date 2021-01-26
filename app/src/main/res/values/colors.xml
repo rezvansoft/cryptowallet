@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#004D40</color>
+    <color name="colorPrimaryDark">#004539</color>
+    <color name="colorAccent">#19CC22</color>
+    <color name="balance_bg_color">#FFCA28</color>
+    <color name="price_bg_color">#19CC22</color>
+    <color name="redtext">#B71C1C</color>
+    <color name="greenicon">#109d90</color>
+</resources>
