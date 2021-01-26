@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ir.rezvansoft.cryptowallet">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+
+    <application
+        android:name="ir.rezvansoft.cryptowallet.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/iclauncher_circle"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".activity.Splash" android:theme="@style/splash">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name="ir.rezvansoft.cryptowallet.activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            tools:replace="screenOrientation" />
+
+        <service
+            android:name="ir.rezvansoft.cryptowallet.service.FetchMarketDataService"
+            android:exported="false" />
+        <service
+            android:name="ir.rezvansoft.cryptowallet.service.AddWalletService"
+            android:exported="false" />
+        <service
+            android:name="ir.rezvansoft.cryptowallet.service.UpdateWalletsWorthService"
+            android:exported="false" />
+        <service
+            android:name="ir.rezvansoft.cryptowallet.service.RefreshWalletService"
+            android:exported="false" />
+
+        <activity
+            android:name="ir.rezvansoft.cryptowallet.activity.AddWalletActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="ir.rezvansoft.cryptowallet.service.NotificationService"
+            android:exported="false" />
+
+        <activity
+            android:name="ir.rezvansoft.cryptowallet.activity.WalletDetailsActivity"
+            android:parentActivityName="ir.rezvansoft.cryptowallet.activity.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ir.rezvansoft.cryptowallet.activity.MainActivity"></meta-data>
+
+
+        </activity>
+
+        <receiver
+            android:name="ir.rezvansoft.cryptowallet.receiver.AlarmReceiver"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver
+            android:name="ir.rezvansoft.cryptowallet.receiver.ScheduleAlarm"
+            android:enabled="true"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </receiver>
+    </application>
+
+</manifest>
