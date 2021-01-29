@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.codit.cryptowatchwallet.ir.codit.cryptowatchwallet.activity.MainActivity">
+    tools:context="ir.rezvansoft.cryptowallet.activity.MainActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
