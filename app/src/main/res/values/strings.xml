@@ -1,11 +1,8 @@
 <resources>
-    <string name="app_name">کیف من</string>
-    <string name="title_wallets">کیف پول ها</string>
+    <string name="app_name">پرشین کریپتو</string>
+    <string name="title_wallets">کیف پول</string>
     <string name="title_market">ارزها</string>
     <string name="title_settings">تنظیمات</string>
-    <string name="credits">
-        Icons - \nhttps://www.flaticon.com\n\nAPI - \nhttps://www.cryptocompare.com\nhttps://www.blockcypher.com
-    </string>
 
 
     <!--add wallet spinner items array!-->
