@@ -17,10 +17,6 @@
     </string-array>
 
     <!--paper wallet addresses!-->
-    <string name="bitcoin_address">1LnHWzy3sDttuPVHLQKrUyx3AasFo3ijyM</string>
-    <string name="eth_address">0x824Ac06208eFA740B91FBD75cE03Ef15790cA90E</string>
-    <string name="lite_address">LNVHbZPLgVMxjM4SFUzTsCpGJEWGUuphyx</string>
-    <string name="ripple_address">rGXUvxM2cTWkXCdAUFgexWwYuc546BBhgD</string>
 
 
     <!--currencies !-->
@@ -28,108 +24,6 @@
     <string-array name="currencies">
         <item>USD</item>
         <item>EUR</item>
-
-
-
-
-<!--
-        <item>KHR</item>
-        <item>TRY</item>
-        <item>BHD</item>
-        <item>RUR</item>
-        <item>BGN</item>
-        <item>IRR</item>
-        <item>KES</item>
-        <item>GHS</item>
-        <item>DOP</item>
-        <item>OMR</item>
-        <item>PYG</item>
-
-<string-array name="currencies">
-        <item>دلار آمریکا</item>
-        <item>یورو</item>
-        <item>یوان چین</item>
-        <item>پوند انگلیس</item>
-        <item>ین ژاپن</item>
-        <item>زلوتی لهستان</item>
-        <item>روبل روسیه</item>
-        <item>دلار سنگاپور</item>
-        <item>دلار استرالیا</item>
-        <item>دلار هنگ کنگ</item>
-        <item>فرانک سوئیس</item>
-        <item>روپیه هند</item>
-        <item>دلار زلاند نو</item>
-        <item>رئال برزیل</item>
-        <item>کرون سوئد</item>
-        <item>پزوی فیلیپین</item>
-        <item>بات تایلند</item>
-        <item>دانگ ویتنام</item>
-        <item>کورونای جمهوری چک</item>
-        <item>راند افریقای جنوبی</item>
-        <item>دینار کویت</item>
-        <item>کواچای زامبیا</item>
-        <item>درهم امارات</item>
-        <item>وون کرهٔ جنوبی</item>
-        <item>پزوی کوبا</item>
-
-<string-array name="currencies">
-        <item>USD</item>
-        <item>EUR</item>
-        <item>CNY</item>
-        <item>GBP</item>
-        <item>JPY</item>
-        <item>PLN</item>
-        <item>RUB</item>
-        <item>SGD</item>
-        <item>AUD</item>
-        <item>HKD</item>
-        <item>CHF</item>
-        <item>INR</item>
-        <item>NZD</item>
-        <item>BRL</item>
-        <item>SEK</item>
-        <item>PHP</item>
-        <item>THB</item>
-        <item>VND</item>
-        <item>CZK</item>
-        <item>ZAR</item>
-        <item>KWD</item>
-        <item>ZMW</item>
-        <item>AED</item>
-        <item>KRW</item>
-        <item>CUC</item>
-
-
-        <item>DZD</item>
-        <item>CUC</item>
-        <item>ZMW</item>
-        <item>AMD</item>
-        <item>TND</item>
-        <item>NAD</item>
-        <item>VUV</item>
-        <item>QAR</item>
-        <item>DASH</item>
-        <item>BYN</item>
-        <item>GEL</item>
-        <item>EGP</item>
-
-         <item>AZN</item>
-
-!-->
-
-
-
-
-
-
-
-
-
-
-
-
-itcoin_address
-
 
 
 
